@@ -1,23 +1,36 @@
 # Cursor Tic-Tac-Toe
 
-Terminal-based Tic-Tac-Toe for two players written in Python.
+Tic-Tac-Toe for two players with both terminal and desktop (Tkinter) launchers.
 
 ## Requirements
 
-- Python 3.10 or newer (uses modern type hints)
+- Python 3.10 or newer (Tkinter ships with the standard macOS build)
 
-## Usage
+## Launch options
+
+### Text mode
 
 ```bash
 python3 tic_tac_toe.py
 ```
 
-Players take turns entering board positions `1-9` until one wins or the board fills.
+You will be prompted for board positions `1-9` until someone wins or the board fills.
+
+### Windowed mode
+
+```bash
+python3 gui_app.py
+```
+
+This opens a small window where you click squares, much like Minesweeper/Saper.
+On macOS you can also double-click `gui_app.py` in Finder if `.py` files are
+associated with Python Launcher.
 
 ## Project Structure
 
-- `tic_tac_toe.py` – game logic and CLI loop
-- `.gitignore` – ignores Python bytecode, venvs, macOS files
+- `core.py` – shared helper functions (board state, winner detection)
+- `tic_tac_toe.py` – classic CLI loop
+- `gui_app.py` – Tkinter-based desktop window
 
 ## Contributing
 
