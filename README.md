@@ -1,25 +1,10 @@
-# Cursor Tic-Tac-Toe
+# Cursor Projects
 
-Terminal-based Tic-Tac-Toe for two players written in Python.
+This repository collects small Cursor-powered experiments.
 
-## Requirements
+## Projects
 
-- Python 3.10 or newer (uses modern type hints)
+- [`tic_tac_toe/`](tic_tac_toe/) – text-based Tic-Tac-Toe game for two players.
 
-## Usage
-
-```bash
-python3 tic_tac_toe.py
-```
-
-Players take turns entering board positions `1-9` until one wins or the board fills.
-
-## Project Structure
-
-- `tic_tac_toe.py` – game logic and CLI loop
-- `.gitignore` – ignores Python bytecode, venvs, macOS files
-
-## Contributing
-
-Feel free to fork the repo and submit pull requests.
+Clone and explore any subdirectory for details and usage instructions.
 
